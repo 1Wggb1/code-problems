@@ -1,5 +1,7 @@
 package br.com.codeproblems.tree;
 
+import br.com.codeproblems.tree.model.TreeNode;
+
 public class BalancedTreeProblem110 {
 
     public static void main(String[] args) {

@@ -43,6 +43,9 @@ public class DynamicProgrammingProblem509 {
 
     public static int fibBottomUpWithoutTable(int n) {
         throwExceptionIfNegative(n);
+        if(n <= 1){
+            return n;
+        }
         int previous = 0;
         int actual = 1;
         int oldActual = 0;

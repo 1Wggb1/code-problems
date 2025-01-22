@@ -3,7 +3,11 @@ package br.com.codeproblems.tree;
 import br.com.codeproblems.tree.model.TreeNode;
 
 public class BinaryTreeTiltProblem563 {
-    public int findTilt(TreeNode root) {
+    public static void main(String[] args) {
+        System.out.println(BinaryTreeTiltProblem563.findTilt(new TreeNode(1, null, new TreeNode(2, null, new TreeNode(3)))));
+    }
+
+    public static int findTilt(TreeNode root) {
         final TiltState tiltState = new TiltState();
         doFindTilt(root, tiltState);
         return tiltState.getTotal();
